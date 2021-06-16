@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FLEXBOX CSS</title>
+  <style>
+    @media(min-width:468px){
+    .container-1{
+      display:flex;
+      /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      
+      flex-direction:column;
+      */
+    }
+    
+    .container-2{
+      display:flex;  
+      /*
+      justify-content:flex-start;
+      justify-content:flex-end;
+      justify-content:center;
+      justify-content:space-around;
+      */
+      justify-content:space-between;
+    }
+  }
+  
+  .container-3{
+    display:flex;  
+    flex-wrap:wrap;
+    justify-content:space-between;
+  }
+  
+  .container-1 div, .container-2 div, .container-3 div{
+    border:1px #ccc solid;
+    padding:10px;
+  }
+  
+  .box-1{
+    flex:2;
+    order:2;
+     background:black;
+     color: white;
+  }
+  
+  .box-2{
+    flex:1;
+    order:1;
+    background:black;
+     color: white;
+  }
+  
+  .box-3{
+    flex:1;
+    order: 3;
+    background:black;
+     color: white;
+  }
+  
+  .container-2-box{
+    flex-basis: 27%;  
+    background:black;
+     color: white;
+  }
+  
+  .container-3-box{
+    flex-basis:12%;
+    background:black;
+     color: white;
+  }
+  </style>
+
+</head>
+
+<body>
+  <div class="container-1">
+  <div class="box-1">
+        <h3>Create MessageDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class CreateMessageDto
+        {
+            public string RecipientUsername { get; set; }
+            public string Content { get; set; }
+        }
+    }</p>
+      </div>
+      <div class="box-2">
+        <h3>LoginDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class LoginDto
+        {
+            public string Username { get; set; }
+            public string Password { get; set; }
+        }
+    }</p>
+      </div>
+      <div class="box-3">
+        <h3>PhotoDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class PhotoDto
+        {
+            public int Id { get; set; }
+            public string Url { get; set; }
+            public bool IsMain { get; set; }
+        }
+    }</p>
+
+
+      </div>
+    </div>
+
+    <div class="container-2">
+  <div class="container-2-box">
+        <h3>Create MessageDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class CreateMessageDto
+        {
+            public string RecipientUsername { get; set; }
+            public string Content { get; set; }
+        }
+    }</p>
+      </div>
+      <div class="container-2-box">
+        <h3>LoginDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class LoginDto
+        {
+            public string Username { get; set; }
+            public string Password { get; set; }
+        }
+    }</p>
+      </div>
+      <div class="container-2-box">
+        <h3>PhotoDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class PhotoDto
+        {
+            public int Id { get; set; }
+            public string Url { get; set; }
+            public bool IsMain { get; set; }
+        }
+    }</p>
+      </div>
+    </div>
+    <div class="container-3">
+  <div class="container-3-box">
+        <h3>Create MessageDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class CreateMessageDto
+        {
+            public string RecipientUsername { get; set; }
+            public string Content { get; set; }
+        }
+    }</p>
+      </div>
+      <div class="container-3-box">
+        <h3>LoginDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class LoginDto
+        {
+            public string Username { get; set; }
+            public string Password { get; set; }
+        }
+    }</p>
+      </div>
+      <div class="container-3-box">
+        <h3>PhotoDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class PhotoDto
+        {
+            public int Id { get; set; }
+            public string Url { get; set; }
+            public bool IsMain { get; set; }
+        }
+    }</p>
+  </div>
+  <div class="container-3-box">
+        <h3>Create MessageDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class CreateMessageDto
+        {
+            public string RecipientUsername { get; set; }
+            public string Content { get; set; }
+        }
+    }</p>
+      </div>
+      <div class="container-3-box">
+        <h3>LoginDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class LoginDto
+        {
+            public string Username { get; set; }
+            public string Password { get; set; }
+        }
+    }</p>
+      </div>
+      <div class="container-3-box">
+        <h3>PhotoDTO</h3>
+        <p>namespace API.DTOs
+    {
+        public class PhotoDto
+        {
+            public int Id { get; set; }
+            public string Url { get; set; }
+            public bool IsMain { get; set; }
+        }
+    }</p>
+  </div
+
+</div>
+
+
+</body>
+</html>
+
+
